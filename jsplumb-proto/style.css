@@ -1,0 +1,44 @@
+#diagramContainer{
+	border: 1px solid black;
+	width: 95%;
+	height: 99%;
+	font-family: sans-serif;
+}
+
+.dbtable-body{
+	font-size: small;
+	margin: 1px 1px 1px 1px;
+	padding: 5px 5px 5px 5px;
+	background: #FFF;
+	border: 1px solid;
+}
+
+
+.dbtable{
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	background: #27a73e;
+}
+
+.item{
+	position: absolute;
+	border: 1px solid black;
+	width: 300px;
+	height: 200px;
+}
+
+.dbtable-header{
+	background: #27a73e;
+	padding: 5px 5px 5px 5px;
+}
+
+.dbtable-header-name{
+	display: inline;
+}
+
+.dbtable-header-actions{
+	display: inline;
+	float: right;
+}

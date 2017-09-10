@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jsplumb prototype</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="diagramContainer">
+        <div id="table-students" class="dbtable">
+            <div id="table-students-header" class="dbtable-header">
+                <div id="table-students-header-name" class="dbtable-header-name">
+                    Students
+                </div>
+                <div id="table-students-header-actions" class="dbtable-header-actions">
+                    <button>I</button>
+                    <button>X</button>
+                </div>
+            </div>
+            <div id="table-students-body" class="dbtable-body">
+                <table>
+                    <tr id="table-students-attribute-1">
+                    <div>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>PK,AI</td>
+                    </div>
+                    </tr>
+                    <tr id="table-students-attribute-2">
+                        <td>Name</td>
+                        <td>text</td>
+                        <td></td>
+                    </tr>
+                    <tr id="table-students-attribute-3">
+                        <td>DOB</td>
+                        <td>datetime</td>
+                        <td></td>
+                    </tr>
+                    <tr id="table-students-attribute-4">
+                        <td>class_id</td>
+                        <td>int</td>
+                        <td>FK</td>
+                    </tr>
+                    <tr id="table-students-attribute-5">
+                        <td>created_at</td>
+                        <td>timestamp</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="table-classes" class="dbtable" style="margin-left: 300px">
+            <div id="table-classes-header" class="dbtable-header">
+                <div id="table-classes-header-name" class="dbtable-header-name">
+                    Classes
+                </div>
+                <div id="table-classes-header-actions" class="dbtable-header-actions">
+                    <button>I</button>
+                    <button>X</button>
+                </div>
+            </div>
+            <div id="table-classes-body" class="dbtable-body">
+                <table>
+                    <tr id="table-classes-attribute-1">
+                    <div>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>PK,AI</td>
+                    </div>
+                    </tr>
+                    <tr id="table-classes-attribute-2">
+                        <td>Name</td>
+                        <td>text</td>
+                        <td></td>
+                    </tr>
+                    <tr id="table-classes-attribute-3">
+                        <td>section</td>
+                        <td>text</td>
+                        <td></td>
+                    </tr>
+                    <tr id="table-classes-attribute-4">
+                        <td>created_at</td>
+                        <td>timestamp</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="./dependencies/jsplumb.min.js" type="text/javascript"></script>
+    <script src="./jsplumbtest.js" type="text/javascript"></script>
+     
+</body>
+</html>
