@@ -1,93 +1,101 @@
-[
-	{
-		"name": "students",
-		"columns": [
-			{
-				"column_id": "student_c1",
-				"title": "id",
-				"type": "int",
-				"is_primary_key": true,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": true
-			},
-			{
-				"column_id": "student_c2",
-				"title": "name",
-				"type": "text",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			},
-			{
-				"column_id": "student_c3",
-				"title": "dob",
-				"type": "datetime",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			},
-			{
-				"column_id": "student_c4",
-				"title": "created_at",
-				"type": "timestamp",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			},
-			{
-				"column_id": "student_c5",
-				"title": "class_id",
-				"type": "int",
-				"is_primary_key": false,
-				"is_foreign_key": true,
-				"foreign_key_connection_id": "student_c6",
-				"auto_increment": false
-			},
-		]
-	},
-	{
-		"name": "class",
-		"columns": [
-			{
-				"column_id": "student_c6",
-				"title": "id",
-				"type": "int",
-				"is_primary_key": true,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": true
-			},
-			{
-				"column_id": "student_c7",
-				"title": "name",
-				"type": "text",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			},
-			{	
-				"column_id": "student_c8",
-				"title": "section",
-				"type": "text",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			},
-			{	
-				"column_id": "student_c9",
-				"title": "created_at",
-				"type": "timestamp",
-				"is_primary_key": false,
-				"is_foreign_key": false,
-				"foreign_key_connection_id": "",
-				"auto_increment": false
-			}
-		]
-	}
-]
+{
+	"tables": [
+		{
+			"name": "students",
+			"columns": [
+				{
+					"column_id": "student_c1",
+					"title": "id",
+					"type": "int",
+					"is_primary_key": true,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": true
+				},
+				{
+					"column_id": "student_c2",
+					"title": "name",
+					"type": "text",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				},
+				{
+					"column_id": "student_c3",
+					"title": "dob",
+					"type": "datetime",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				},
+				{
+					"column_id": "student_c4",
+					"title": "created_at",
+					"type": "timestamp",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				},
+				{
+					"column_id": "student_c5",
+					"title": "class_id",
+					"type": "int",
+					"is_primary_key": false,
+					"is_foreign_key": true,
+					"foreign_key_connection_id": "student_c6",
+					"auto_increment": false
+				}
+			]
+		},
+		{
+			"name": "class",
+			"columns": [
+				{
+					"column_id": "student_c6",
+					"title": "id",
+					"type": "int",
+					"is_primary_key": true,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": true
+				},
+				{
+					"column_id": "student_c7",
+					"title": "name",
+					"type": "text",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				},
+				{	
+					"column_id": "student_c8",
+					"title": "section",
+					"type": "text",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				},
+				{	
+					"column_id": "student_c9",
+					"title": "created_at",
+					"type": "timestamp",
+					"is_primary_key": false,
+					"is_foreign_key": false,
+					"foreign_key_connection_id": "",
+					"auto_increment": false
+				}
+			]
+		}
+	],
+	"references": [
+		{
+			"source": "t1_id",
+			"target": "t2_id"
+		}
+	]
+}

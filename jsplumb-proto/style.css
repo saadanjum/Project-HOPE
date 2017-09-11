@@ -10,16 +10,15 @@
 	margin: 1px 1px 1px 1px;
 	padding: 5px 5px 5px 5px;
 	background: #FFF;
-	border: 1px solid;
 }
 
 
 .dbtable{
-	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;
 	margin: 5px 5px 5px 5px;
-	background: #27a73e;
+	position: absolute;
+	box-shadow: 0px 0px 5px #888888;
 }
 
 .item{
@@ -30,7 +29,7 @@
 }
 
 .dbtable-header{
-	background: #27a73e;
+	background: #9cb7dc;
 	padding: 5px 5px 5px 5px;
 }
 
