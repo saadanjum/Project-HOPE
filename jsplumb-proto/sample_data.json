@@ -1,6 +1,7 @@
 {
 	"tables": [
 		{
+			"table_id": "t1",
 			"name": "students",
 			"columns": [
 				{

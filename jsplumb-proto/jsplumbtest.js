@@ -35,7 +35,7 @@ function createTableHTML(data){
 jsPlumb.ready(function() {
 	setTimeout(function(){
 		connection1 = jsPlumb.connect({
-		    connector: ["Straight"],
+		    connector: ["Bezier"],
 		    source:"table-students",
 		    target:"table-classes",
 		    anchor: ["Left", "Right"],

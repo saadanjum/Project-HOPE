@@ -1,0 +1,18 @@
+#side-menu{
+	position:absolute;
+	left: 10px;
+}
+
+.page-container{
+	margin: 10px 10px 10px 10px;
+}
+
+.column-checkboxes{
+	margin-top: 10px !important;
+	margin-bottom: 0px !important;
+}
+
+.new-column-checkboxes{
+	margin-top: 10px !important;
+	margin-bottom: 0px !important;
+}

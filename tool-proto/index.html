@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO</title>
+	<link rel="stylesheet" type="text/css" href="./dependencies/semantic.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./dependencies/semantic.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style/styling.css">
+	<script type="text/javascript" src="./js/store.js"></script>
+</head>
+<body>
+	<div id="side-menu" class="ui vertical inverted icon menu">
+	  <a class="item" data-inverted data-tooltip="Create new table" data-position="right center" onclick="openCreateTableModal()">
+	    <i class="plus icon"></i>
+	  </a>
+	  <a style="display:none" class="item" data-inverted data-tooltip="Table details view" data-position="right center">
+	    <i class="unordered list icon"></i>
+	  </a>
+	  <a class="item" data-inverted data-tooltip="Table diagram view" data-position="right center">
+	    <i class="sitemap icon"></i>
+	  </a>
+	  <a class="item" data-inverted data-tooltip="Clear current tables" data-position="right center">
+	    <i class="refresh icon"></i>
+	  </a>
+	</div>
+
+	<!-- create table modal -->
+	<div id="createTableModal" class="ui small modal">
+	  <div class="header">Create Table</div>
+	  <div class="scrolling content">
+	  	<div class="ui form">
+	  		<div class="field">
+	  			<label>Table Name</label>
+      			<input id="tablename-input" type="text" placeholder="Table Name">
+	  		</div>
+	  		<h5 class="ui horizontal divider header">
+			  <i class="table icon"></i>
+			  Columns
+			</h5>
+			<div id="createTableColumns"></div>
+	  	</div>
+	    <button class="circular ui teal icon button right floated" onclick="addTableColumn()" data-inverted data-tooltip="Add Column" data-position="left center">
+		  <i class="plus icon"></i>
+		</button>
+	  </div>
+	  <div class="actions">
+	    <div class="ui secondary basic button">Cancel</div>
+	    <div class="ui teal button disabled">Create</div>
+	  </div>
+	</div>
+ 
+	<!-- Details view -->
+	<div id="details-page" class="page-container">
+		THIS IS THE REAL DEAL
+	</div>
+	<script type="text/javascript">
+		window.onresize= function(){
+			document.getElementById('side-menu').style.top = window.innerHeight/2 - (document.getElementById('side-menu').clientHeight+14)/2 + "px"
+		}
+		window.onload = function(){
+			document.getElementById('side-menu').style.top = window.innerHeight/2 - (document.getElementById('side-menu').clientHeight+14)/2 + "px"
+		}
+	</script>
+	<script type="text/javascript" src="./js/code.js"></script>
+</body>
+</html>
